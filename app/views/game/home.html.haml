@@ -1,0 +1,21 @@
+%h1.main-text
+  CHOOSE YOUR WEAPON
+
+.icon-row
+  .game-icon.rock
+    = link_to '/throw/rock', method: :post do
+      = image_tag 'rock-icon-white.png'
+      %span
+        Rock
+
+  .game-icon.paper
+    = link_to '/throw/paper', method: :post do
+      = image_tag 'paper-icon-white.png'
+      %span
+        Paper
+
+  .game-icon.scissors
+    = link_to '/throw/scissors', method: :post do
+      = image_tag 'scissors-icon-white.png'
+      %span
+        Scissors

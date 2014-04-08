@@ -1,0 +1,17 @@
+!!! 5
+%head
+  %title
+    RockPaperScissors
+
+  = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Lobster:400"
+  = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300,300italic"
+  
+  = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+  
+  = javascript_include_tag "application", "data-turbolinks-track" => true
+  = csrf_meta_tags
+
+%body
+  
+  .container
+    = yield

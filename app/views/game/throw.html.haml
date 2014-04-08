@@ -1,0 +1,13 @@
+%h1.main-text
+  FIGHT
+
+.icon-row
+  .results
+    %h1
+    = link_to 'Rematch', root_path
+
+  .throw-icon.user-sign{:data => {:sign => @user_sign}}
+    = sign_image(@user_sign)
+
+  .throw-icon.computer-sign{:data => {:sign => @computer_sign}}
+    = sign_image(@computer_sign)
